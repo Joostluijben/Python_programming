@@ -1,0 +1,12 @@
+#        Uitkomst    Type
+#5	    5           Integer
+#5.0	    5.0	        Float
+#5%2	    1	        Integer
+#5>1	    True	    Bool
+#‘5’	    ‘5’	        String
+#5*2	    10	        Integer
+#‘5’*2   ‘55’	    String
+#5/2	    2.5	        Float
+#5//2	2	        Integer
+#[5, 2, 1]	    [5, 2, 1]	    List
+#5 in [1, 4, 6]	    False	    Bool
