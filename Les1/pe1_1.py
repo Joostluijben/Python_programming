@@ -1,3 +1,6 @@
+#Noteer van elke expressie wat de uitkomst en het type is!
+
+
 #        Uitkomst    Type
 #5	    5           Integer
 #5.0	    5.0	        Float

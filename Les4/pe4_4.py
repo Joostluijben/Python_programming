@@ -11,4 +11,4 @@ def new_password(oldpassword, newpassword):
 new_password( 'hoi' , 'hoi' )
 new_password('hallo_daar', 'hallo_daaro')
 new_password('hallo_daar', 'hallo_daaro2')
-new_password(input('voer uw oude wachtwoord in : '), input('voer uw nieuwe wachtwoord in dat niet hetzelfde is als uw oude, langer is dan 6 karakters en 1 cijfer bevat'))
+new_password(input('voer uw oude wachtwoord in : '), input('voer uw nieuwe wachtwoord in dat niet hetzelfde is als uw oude, langer is dan 6 karakters en 1 cijfer bevat: '))
