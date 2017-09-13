@@ -1,4 +1,4 @@
-cijfers = ['1','2','3','4','5','6','7','8','9','0']
+cijfers = ('1','2','3','4','5','6','7','8','9','0')
 def new_password(oldpassword, newpassword):
     if oldpassword != newpassword and len(newpassword) >= 6:
         for x in newpassword:

@@ -1,5 +1,5 @@
 lijst = ['a', 'b', 'c']
-print(lijst)
+
 def wijzig(letterlijst):
     lijst.pop()
     lijst.pop()
@@ -7,5 +7,6 @@ def wijzig(letterlijst):
     lijst.append('d')
     lijst.append('e')
     lijst.append('f')
+print(lijst)
 wijzig(lijst)
 print(lijst)

@@ -1,6 +1,7 @@
 age = int(input('Geef je leeftijd:'))
-paspoort = eval(input('Nederlands paspoort:'))
-if (age >= 18) and (paspoort == True):
+paspoort = input('Nederlands paspoort:')
+
+if (age >= 18) and (paspoort == 'ja'):
     print('Gefeliciteerd, je mag stemmen!')
-elif (paspoort != True) or age <= 18:
+elif (paspoort != 'ja') or (age <= 18):
     print('Helaas u mag niet stemmen')
