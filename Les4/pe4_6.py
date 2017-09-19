@@ -1,9 +1,7 @@
 lijst = ['a', 'b', 'c']
 
 def wijzig(letterlijst):
-    lijst.pop()
-    lijst.pop()
-    lijst.pop()
+    lijst.clear()
     lijst.append('d')
     lijst.append('e')
     lijst.append('f')

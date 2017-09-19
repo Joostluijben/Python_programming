@@ -2,7 +2,7 @@ cijfers = ('1','2','3','4','5','6','7','8','9','0')
 def new_password(oldpassword, newpassword):
     if oldpassword != newpassword and len(newpassword) >= 6:
         for x in newpassword:
-            if x in cijfers:
+            if x in range(10):
                 return print(True,'\nHet wachtwoord is veranderd')
         else:
             return print(False)

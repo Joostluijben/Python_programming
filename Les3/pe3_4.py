@@ -1,4 +1,4 @@
 dagen = ['maandag', 'dinsdag', 'woensdag']
 
 for x in dagen:
-    print(x[2:])
+    print(x[:2])
