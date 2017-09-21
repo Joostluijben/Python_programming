@@ -7,5 +7,6 @@ def tabel():
     print('F\t\tC''')
     for x in range(-30,41,10):
         Fh = convert(x)
-        print(x,Fh, sep='\t\t')
+        #print(x,Fh, sep='\t\t')
+        print('{:3}{:11}'.format(x,Fh))
 tabel()
