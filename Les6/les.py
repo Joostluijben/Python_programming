@@ -10,5 +10,5 @@ BMI(240,75)
 
 def acronym(user):
     for x in user.split():
-        print(x[0].upper(),end='')
+        print(x[0].upper(),end=''+'\n')
 acronym('Random acces memory')

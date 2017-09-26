@@ -6,7 +6,7 @@ def toon_aantal_kluizen_vrij():
         if x != '\n':
             lst.append(x.strip().split(';'))
     vrij = 12 - len(lst)
-    print('Er zijn '+str(vrij) + ' kluisjes vrij')
+    print('Er zijn ' + str(vrij) + ' kluisjes vrij')
     vol = []
     kluisnummers = []
     for x in lst:
@@ -20,8 +20,8 @@ def toon_aantal_kluizen_vrij():
 def nieuwe_kluis():
     lst = []
     kluisnummers = []
-    vol =[]
-    content = open('kluizen.txt','r')
+    vol = []
+    content = open('kluizen.txt', 'r')
     reader = content.readlines()
     for x in reader:
         if x != '\n':
@@ -40,11 +40,11 @@ def nieuwe_kluis():
     elif nummer in kluisnummers:
         print('Dat kluisje is bezet\n')
         nieuwe_kluis()
-    elif nummer not in kluisnummers and nummer <12 and nummer > 0:
+    elif nummer not in kluisnummers and nummer < 12 and nummer > 0:
         code = input('Voer een kluiscode in ')
-        content = open('kluizen.txt','a')
-        content.write(str('\n')+'{};{}'.format(nummer, code))
-        print('U heeft kluisje '+str(nummer)+' gekregen\n')
+        content = open('kluizen.txt', 'a')
+        content.write(str('\n') + '{};{}'.format(nummer, code))
+        print('U heeft kluisje ' + str(nummer) + ' gekregen\n')
     elif nummer > 12:
         print('Er zijn maar 12 kluisjes\n')
         nieuwe_kluis()
@@ -72,13 +72,11 @@ def kluis_openen():
         print('Dat is geen juiste wachtwoord en kluisnummer combinatie\n')
 
 
-
-
 def kluisteruggeven():
-    lst=[]
+    lst = []
     nummers = []
     wachtwoorden = []
-    ww=[]
+    ww = []
     nummer = input('Voer een kluisnummer in ')
     content = open('kluizen.txt', 'r')
     reader = content.readlines()
@@ -112,15 +110,13 @@ def kluisteruggeven():
         kluisteruggeven()
     content = open('kluizen.txt', 'w')
     for x in lst:
-        formatted = ('{};{}'.format(x[0], x[1]))+str('\n')
+        formatted = ('{};{}'.format(x[0], x[1])) + str('\n')
         content.write(formatted)
 
 
-
-
-
 while True:
-    print('1: Ik wil weten hoeveel kluizen nog vrij zijn\n2: Ik wil een nieuwe kluis\n3: Ik wil even iets uit mijn kluis halen\n4: Ik geef mijn kluis terug\n5: Sluit af')
+    print(
+        '1: Ik wil weten hoeveel kluizen nog vrij zijn\n2: Ik wil een nieuwe kluis\n3: Ik wil even iets uit mijn kluis halen\n4: Ik geef mijn kluis terug\n5: Sluit af')
     user = input('Maak uw keuze ')
     if user == '1':
         toon_aantal_kluizen_vrij()
