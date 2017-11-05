@@ -1,0 +1,8 @@
+A: B right
+B: D right
+C: A right
+D: D wrong, C
+E: A wrong, C
+F: D right
+G: A right
+H: C wrong, D
