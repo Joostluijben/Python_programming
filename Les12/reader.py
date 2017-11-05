@@ -10,6 +10,7 @@ with open('departures.xml') as readDepartureXml:
 
 
 def trainDepature(destination):
+    lst = []
     for trains in stationsdict['ActueleVertrekTijden']['VertrekkendeTrein']:
         try:
             if (destination in trains['EindBestemming']) or (destination in trains['RouteTekst']):
@@ -24,6 +25,8 @@ def trainDepature(destination):
 
                 trainKind = trains['TreinSoort']
                 print('The next train ({}) leaves in {} minutes'.format(trainKind, totalDifference))
-
+                lst.append(trainKind)
+                lst.append(totalDifference)
         except KeyError:
             continue
+    return lst

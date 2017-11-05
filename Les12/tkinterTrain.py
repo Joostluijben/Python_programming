@@ -1,20 +1,19 @@
 from tkinter import *
 from reader import trainDepature
 
-def firstFiveTrains():
-    destination = str(destinationEntry.get())
-    go = trainDepature(destination)
-    label['text'] = 'De eerste treinen gaan om {}'.format(go)
+def reisPlanner():
+    destination = trainDepature(destinationEntry.get())
+    label['text'] = destination
 
 root = Tk()
 
 destinationEntry = Entry(master=root)
 destinationEntry.pack()
 
-button = Button(master=root, text='Plan je reis', command=firstFiveTrains)
+button = Button(master=root, text='Druk hier', command=reisPlanner)
 button.pack()
 
-label = Label(master=root)
+label = Label(master=root, text='test')
 label.pack()
 
 root.mainloop()
